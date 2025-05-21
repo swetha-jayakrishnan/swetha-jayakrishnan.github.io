@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
-import heroIm from '../images/qa.png';
+import heroIm from "../images/qa.png";
 
 const Hero = () => {
   return (
