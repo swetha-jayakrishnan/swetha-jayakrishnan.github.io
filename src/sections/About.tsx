@@ -1,7 +1,7 @@
 import React from 'react';
 import { FileDown, GraduationCap, Award, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
-import resumePdf from '../assets/Swetha_Jayakrishnan.pdf';
+import resumePdf from '/Swetha_Jayakrishnan.pdf';
 
 const About = () => {
   const experience = [
