@@ -58,8 +58,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          I'm a passionate Quality Assurance Engineer with over 8 years of experience in ensuring 
-          software excellence through comprehensive testing strategies and automation frameworks.
+          "I’m a detail-oriented Quality Analyst with strong skills in manual testing and defect tracking. I work closely with teams to ensure high-quality, user-friendly software."
         </motion.p>
       </div>
 

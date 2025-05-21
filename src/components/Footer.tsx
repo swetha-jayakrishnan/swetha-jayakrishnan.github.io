@@ -17,7 +17,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <a
-              href="https://linkedin.com/"
+              href="www.linkedin.com/in/swetha-jayakrishnan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-light hover:text-primary transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/swetha-jayakrishnan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-light hover:text-primary transition-colors"
