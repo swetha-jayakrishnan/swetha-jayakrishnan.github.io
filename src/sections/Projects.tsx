@@ -1,26 +1,32 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { motion } from 'framer-motion';
+import drpaulBlack from "../images/black-logo.svg"
+import drpaulWhite from "../images/black-logo.svg"
+import murty from "../images/murty-trust.svg"
+import tcceed from "../images/logo.webp"
+import palBlack from "../images/pal-logo.svg"
+import palBlue from "../images/PAL-logo-blue.svg"
 
 const Projects = () => {
   const projects = [
     {
       title: "Dr. Paul's Dental Clinic",
       description: 'Providing top-notch dental care.',
-      imageUrl: '/black-logo.svg',
-      darkImageUrl: '/white-logo.svg',
+      imageUrl: drpaulBlack,
+      darkImageUrl: drpaulWhite,
       projectUrl: 'https://www.drpaulsdentalclinic.com/'
     },
     {
       title: 'Murty Trust',
       description: 'Supporting educational initiatives.',
-      imageUrl: '/murty-trust.svg',
+      imageUrl: murty,
       projectUrl: 'https://www.murtytrust.org/'
     },
     {
       title: 'TCCEED',
       description: 'Transforming community engagement.',
-      imageUrl: '/logo.webp',
+      imageUrl: tcceed,
       projectUrl: 'https://tcceed.org/'
     },
     {
@@ -38,8 +44,8 @@ const Projects = () => {
     {
       title: 'PAL Works',
       description: 'This is a placeholder card.',
-      imageUrl: '/pal-logo.svg',
-      darkImageUrl: '/PAL-logo-blue.svg',
+      imageUrl: palBlack,
+      darkImageUrl: palBlue,
       projectUrl: 'https://palworks.in/'
     }
   ];
