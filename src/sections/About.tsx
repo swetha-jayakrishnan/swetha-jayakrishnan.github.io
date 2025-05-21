@@ -1,6 +1,7 @@
 import React from 'react';
 import { FileDown, GraduationCap, Award, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
+import resumePdf from '../assets/Swetha_Jayakrishnan.pdf';
 
 const About = () => {
   const experience = [
@@ -160,7 +161,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <a 
-              href="/Swetha_Jayakrishnan.pdf" 
+              href={resumePdf}
               download 
               className="btn-primary flex items-center"
             >

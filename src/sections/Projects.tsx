@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { motion } from 'framer-motion';
 import drpaulBlack from "../images/black-logo.svg"
-import drpaulWhite from "../images/black-logo.svg"
+import drpaulWhite from "../images/white-logo.svg"
 import murty from "../images/murty-trust.svg"
 import tcceed from "../images/logo.webp"
 import palBlack from "../images/pal-logo.svg"
