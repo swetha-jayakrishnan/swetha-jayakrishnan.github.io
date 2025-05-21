@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #008080;
+  --primary-dark: #006666;
+  --secondary: #007070;
+  --accent: #007575;
+  --background: #EDDACC;
+  --text: #000000;
+  --text-light: #333333;
+  --card: #f8fafc;
+  --border: #f8fafc;
+  --success: #22c55e;
+  --warning: #eab308;
+  --error: #ef4444;
+}
+
+.dark {
+  --primary: #EDDACC;
+  --primary-dark: #006666;
+  --secondary: #007070;
+  --accent: #007575;
+  --background: #050505;
+  --text: #E6E6FA;
+  --text-light: #E6E6FA99;
+  --card: #111111;
+  --border: #222222;
+  --success: #008080;
+  --warning: #E6E6FA;
+  --error: #ff0000;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+  color: var(--text);
+  background-color: var(--background);
+  transition: background-color 0.3s ease;
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-6 relative inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute w-1/2 h-1 bg-primary rounded bottom-0 left-1/4 -mb-2;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-16;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-black hover:text-white font-bold py-2 px-4 rounded-lg transition-all shadow-md hover:shadow-lg dark:hover:bg-[#050505] dark:hover:text-[#EDDACC] dark:hover:border-[#EDDACC] dark:border-2 dark:border-transparent;
+  }
+
+  .card {
+    @apply bg-card rounded-lg shadow-md p-6 transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full p-3 border-2 border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-text;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 5px;
+  position: relative;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--primary);
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  transition: opacity 0.5s ease;
+}
+
+.loader-bar {
+  width: 90vw;
+  max-width: 350px;
+  min-width: 120px;
+  height: 10px;
+  background-color: var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.loader-progress {
+  height: 100%;
+  background-color: var(--primary);
+  width: 100%;
+  transition: width 3s ease-in-out;
+}
