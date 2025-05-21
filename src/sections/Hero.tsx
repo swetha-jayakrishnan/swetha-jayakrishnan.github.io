@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
+import heroIm from '../images/qa.png';
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
           className="mb-4"
         >
           <img
-            src="/qa.png"
+            src={heroIm}
             alt="Swetha's profile"
             className="w-32 h-32 md:w-40 md:h-40 rounded-full object-contain mx-auto shadow-xl border-4 border-white dark:border-primary"
           />
