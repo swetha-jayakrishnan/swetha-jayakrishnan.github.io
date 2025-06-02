@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
-import heroIm from "../images/qa.png";
+import heroIm from "../images/qa1.jpg";
+import heroImLight from "../images/qa2.jpg";
 
 const Hero = () => {
   return (
@@ -14,10 +15,17 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="mb-4"
         >
+          {/* Light theme image */}
+          <img
+            src={heroImLight}
+            alt="Swetha's profile light"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full object-contain mx-auto shadow-xl border-4 border-white dark:hidden"
+          />
+          {/* Dark theme image */}
           <img
             src={heroIm}
-            alt="Swetha's profile"
-            className="w-32 h-32 md:w-40 md:h-40 rounded-full object-contain mx-auto shadow-xl border-4 border-white dark:border-primary"
+            alt="Swetha's profile dark"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full object-contain mx-auto shadow-xl border-4 border-primary hidden dark:block"
           />
         </motion.div>
 
